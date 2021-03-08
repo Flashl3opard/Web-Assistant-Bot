@@ -93,7 +93,7 @@ for i in range(1,10000):
       ast = p.prompt('ENTER YOUR WEBSITE NAME HERE:{dont use https or .com etc}')
       ww = 'https://'+ast+'.com'
       wb(ww)
-     else:
+    else:
       continue
 exit()
   
