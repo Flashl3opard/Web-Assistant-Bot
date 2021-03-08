@@ -7,9 +7,7 @@ import pyautogui as p
 
 #DIFINING CERTAIN FUNCTIONS
 def say(sound):   #DEFINING A FUNCTION FOR BOT's VOICE
-  engine.setProperty('rate',150)
-  engine.say(sound)
-  engine.runAndWait()
+  py.speak(sound)
   
 def tc():   #DEFINING A FUNCTION TO TAKE AUDIO COMMANDS
   r = sr.Recognizer()
@@ -31,7 +29,7 @@ def wb(w):
   web.open(web)
 
 #CREATING THE PROGRAM USING DEFINED AND IN-BUILT FUNCTIONS
-engine = py.init()
+
 
 say('HELLO SIR..I AM YOUR WEB ASSISTANT....say any website name to open it...and say close or exit or bye to terminate the program')
 
@@ -92,8 +90,8 @@ for i in range(1,10000):
     q1 = input('ENTER (y/n):')
     if q1=='y':
       say('please type your website name')
-      as = p.prompt('ENTER YOUR WEBSITE NAME HERE:{dont use https or .com etc}')
-      ww = 'https://'+as+'.com'
+      ast = p.prompt('ENTER YOUR WEBSITE NAME HERE:{dont use https or .com etc}')
+      ww = 'https://'+ast+'.com'
       wb(ww)
      else:
       continue
