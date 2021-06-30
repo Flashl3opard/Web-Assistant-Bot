@@ -13,7 +13,7 @@ TYPE "git clone https://github.com/sheoreyyash/Web-Assistant-Bot.git"
 
 # FOR LINUX:
 OPEN TERMINAL
-TYPE "git clone https://github.com/sheoreyyash/Web-Assistant-Bot.git"
+TYPE "git clone https://github.com/sheoreyyash/Web-Assistant-Bot.git" &&
 >cd Web-Assistant-Bot
 >sudo apt pip install -r requirements.txt &&
 >python3 WebAssistantBot.py
